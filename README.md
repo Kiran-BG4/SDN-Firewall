@@ -104,7 +104,13 @@ pingall
 ```bash
 h1 wget http://10.0.0.2
 ```
-
+# incase of the port is under use then 
+```bash
+sudo lsof -i :6633
+sudo kill -9 <pid>
+```
+ -> we have used the 6633 port number so we are checking the process id using the port 6633 
+ -> if the port is under use then we kill that process using that pid
 ---
 
 # Expected Results
